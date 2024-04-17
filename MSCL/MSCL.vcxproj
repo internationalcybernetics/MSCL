@@ -54,74 +54,74 @@
     <ProjectGuid>{6E258AAE-2FB3-45C8-AFF2-1350FBBA18BD}</ProjectGuid>
     <RootNamespace>MSCL</RootNamespace>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (.NET)|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Java)|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (.NET)|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Java)|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (C++)|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (C++)|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (.NET)|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (.NET)|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (C++)|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (C++)|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Python)|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Python)|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
@@ -174,51 +174,51 @@
     <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
     <LinkIncremental>false</LinkIncremental>
     <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
-    <IncludePath>$(LIB_PATH)\boost\boost_1_68_0;$(IncludePath);$(LIB_PATH)\openssl\include</IncludePath>
-    <LibraryPath>$(LIB_PATH)\boost\boost_1_68_0\lib32-msvc-14.0;$(LIB_PATH)\openssl\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(BOOST_INCLUDEDIR);$(IncludePath);$(LIB_PATH)\openssl\include</IncludePath>
+    <LibraryPath>$(BOOST_LIBRARYDIR);$(LIB_PATH)\openssl\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Python)|x64'">
     <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
     <LinkIncremental>false</LinkIncremental>
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
-    <IncludePath>$(LIB_PATH)\boost\boost_1_68_0;$(IncludePath);$(LIB_PATH)\openssl\include64</IncludePath>
-    <LibraryPath>$(LIB_PATH)\boost\boost_1_68_0\lib64-msvc-14.0;$(LIB_PATH)\openssl\lib64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(BOOST_INCLUDEDIR);$(IncludePath);$(LIB_PATH)\openssl\include64</IncludePath>
+    <LibraryPath>$(BOOST_LIBRARYDIR);$(LIB_PATH)\openssl\lib64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (C++)|Win32'">
     <OutDir>..\Output\C++\x86\Release\</OutDir>
     <IntDir>build\$(Configuration)\x86\</IntDir>
     <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
-    <IncludePath>$(LIB_PATH)\boost\boost_1_68_0;$(IncludePath);$(LIB_PATH)\openssl\include</IncludePath>
-    <LibraryPath>$(LIB_PATH)\boost\boost_1_68_0\lib32-msvc-14.0;$(LIB_PATH)\openssl\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(BOOST_INCLUDEDIR);$(IncludePath);$(LIB_PATH)\openssl\include</IncludePath>
+    <LibraryPath>$(BOOST_LIBRARYDIR);$(LIB_PATH)\openssl\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (C++)|x64'">
     <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
-    <IncludePath>$(LIB_PATH)\boost\boost_1_68_0;$(IncludePath);$(LIB_PATH)\openssl\include64</IncludePath>
-    <LibraryPath>$(LIB_PATH)\boost\boost_1_68_0\lib64-msvc-14.0;$(LIB_PATH)\openssl\lib64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(BOOST_INCLUDEDIR);$(IncludePath);$(LIB_PATH)\openssl\include64</IncludePath>
+    <LibraryPath>$(BOOST_LIBRARYDIR);$(LibraryPath)</LibraryPath>
     <OutDir>..\Output\C++\x64\Release\</OutDir>
     <IntDir>build\$(Configuration)\x64\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (.NET)|Win32'">
     <OutDir>..\Output\DotNet\x86\Debug\</OutDir>
     <IntDir>build\$(Configuration)\x86\Debug\</IntDir>
-    <IncludePath>$(LIB_PATH)\boost\boost_1_68_0;$(IncludePath);$(LIB_PATH)\openssl\include</IncludePath>
-    <LibraryPath>$(LIB_PATH)\boost\boost_1_68_0\lib32-msvc-14.0;$(LIB_PATH)\openssl\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(BOOST_INCLUDEDIR);$(IncludePath);$(LIB_PATH)\openssl\include</IncludePath>
+    <LibraryPath>$(BOOST_LIBRARYDIR);$(LIB_PATH)\openssl\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (.NET)|x64'">
-    <IncludePath>$(LIB_PATH)\boost\boost_1_68_0;$(IncludePath);$(LIB_PATH)\openssl\include64</IncludePath>
-    <LibraryPath>$(LIB_PATH)\boost\boost_1_68_0\lib64-msvc-14.0;$(LIB_PATH)\openssl\lib64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(BOOST_INCLUDEDIR);$(IncludePath);$(LIB_PATH)\openssl\include64</IncludePath>
+    <LibraryPath>$(BOOST_LIBRARYDIR);$(LIB_PATH)\openssl\lib64;$(LibraryPath)</LibraryPath>
     <OutDir>..\Output\DotNet\x64\Debug\</OutDir>
     <IntDir>build\$(Configuration)\x64\Debug\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (C++)|Win32'">
     <OutDir>..\Output\C++\x86\Debug\</OutDir>
     <IntDir>build\$(Configuration)\x86\</IntDir>
-    <IncludePath>$(LIB_PATH)\boost\boost_1_68_0;$(IncludePath);$(LIB_PATH)\openssl\include</IncludePath>
-    <LibraryPath>$(LIB_PATH)\boost\boost_1_68_0\lib32-msvc-14.0;$(LIB_PATH)\openssl\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(BOOST_INCLUDEDIR);$(IncludePath);$(LIB_PATH)\openssl\include</IncludePath>
+    <LibraryPath>$(BOOST_LIBRARYDIR);$(LIB_PATH)\openssl\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (C++)|x64'">
-    <IncludePath>$(LIB_PATH)\boost\boost_1_68_0;$(IncludePath);$(LIB_PATH)\openssl\include64</IncludePath>
-    <LibraryPath>$(LIB_PATH)\boost\boost_1_68_0\lib64-msvc-14.0;$(LIB_PATH)\openssl\lib64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(BOOST_INCLUDEDIR);$(IncludePath);$(LIB_PATH)\openssl\include64</IncludePath>
+    <LibraryPath>$(BOOST_LIBRARYDIR);$(LIB_PATH)\openssl\lib64;$(LibraryPath)</LibraryPath>
     <OutDir>..\Output\C++\x64\Debug\</OutDir>
     <IntDir>build\$(Configuration)\x64\</IntDir>
   </PropertyGroup>
@@ -227,32 +227,35 @@
     <IntDir>build\$(Configuration)\x86\Release\</IntDir>
     <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(LIB_PATH)\boost\boost_1_68_0;$(IncludePath);$(LIB_PATH)\openssl\include</IncludePath>
-    <LibraryPath>$(LIB_PATH)\boost\boost_1_68_0\lib32-msvc-14.0;$(LIB_PATH)\openssl\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(BOOST_INCLUDEDIR);$(IncludePath);$(LIB_PATH)\openssl\include</IncludePath>
+    <LibraryPath>$(BOOST_LIBRARYDIR);$(LIB_PATH)\openssl\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Java)|Win32'">
     <OutDir>..\Output\Java\x86\</OutDir>
     <IntDir>build\$(Configuration)\x86\</IntDir>
     <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(LIB_PATH)\boost\boost_1_68_0;C:\Program Files\Java\jdk1.8.0_121\include;C:\Program Files\Java\jdk1.8.0_121\include\win32;$(IncludePath);$(LIB_PATH)\openssl\include</IncludePath>
-    <LibraryPath>$(LIB_PATH)\boost\boost_1_68_0\lib32-msvc-14.0;$(LIB_PATH)\openssl\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(BOOST_INCLUDEDIR);C:\Program Files\Java\jdk1.8.0_121\include;C:\Program Files\Java\jdk1.8.0_121\include\win32;$(IncludePath);$(LIB_PATH)\openssl\include</IncludePath>
+    <LibraryPath>$(BOOST_LIBRARYDIR);$(LIB_PATH)\openssl\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (.NET)|x64'">
     <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(LIB_PATH)\boost\boost_1_68_0;$(IncludePath);$(LIB_PATH)\openssl\include64</IncludePath>
-    <LibraryPath>$(LIB_PATH)\boost\boost_1_68_0\lib64-msvc-14.0;$(LIB_PATH)\openssl\lib64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(BOOST_INCLUDEDIR);$(IncludePath);$(LIB_PATH)\openssl\include64</IncludePath>
+    <LibraryPath>$(BOOST_LIBRARYDIR);$(LIB_PATH)\openssl\lib64;$(LibraryPath)</LibraryPath>
     <OutDir>..\Output\DotNet\x64\Release\</OutDir>
     <IntDir>build\$(Configuration)\x64\Release\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Java)|x64'">
     <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(LIB_PATH)\boost\boost_1_68_0;C:\Program Files\Java\jdk1.8.0_121\include;C:\Program Files\Java\jdk1.8.0_121\include\win32;$(IncludePath);$(LIB_PATH)\openssl\include64</IncludePath>
-    <LibraryPath>$(LIB_PATH)\boost\boost_1_68_0\lib64-msvc-14.0;$(LIB_PATH)\openssl\lib64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(BOOST_INCLUDEDIR);C:\Program Files\Java\jdk1.8.0_121\include;C:\Program Files\Java\jdk1.8.0_121\include\win32;$(IncludePath);$(LIB_PATH)\openssl\include64</IncludePath>
+    <LibraryPath>$(BOOST_LIBRARYDIR);$(LIB_PATH)\openssl\lib64;$(LibraryPath)</LibraryPath>
     <OutDir>..\Output\Java\x64\</OutDir>
     <IntDir>build\$(Configuration)\x64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnabled>false</VcpkgEnabled>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release(Python)|Win32'">
     <PreBuildEvent>
@@ -262,11 +265,11 @@
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>$(ProjectDir)source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>MSCL_DISABLE_SSL;MSCL_DISABLE_WEBSOCKETS;WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4290;4127;4100;</DisableSpecificWarnings>
@@ -274,7 +277,6 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -300,11 +302,11 @@
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>$(ProjectDir)source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>MSCL_DISABLE_SSL;MSCL_DISABLE_WEBSOCKETS;WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4290;4127;4100;</DisableSpecificWarnings>
@@ -312,7 +314,6 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -337,11 +338,11 @@
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>$(ProjectDir)source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>MSCL_DISABLE_SSL;MSCL_DISABLE_WEBSOCKETS;WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4290;4127;4100;</DisableSpecificWarnings>
@@ -362,6 +363,7 @@
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
     </ProjectReference>
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release (C++)|x64'">
     <PreBuildEvent>
@@ -373,11 +375,11 @@
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>$(ProjectDir)source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>MSCL_DISABLE_SSL;MSCL_DISABLE_WEBSOCKETS;BOOST_ALL_DYN_LINK;WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4290;4127;4100;</DisableSpecificWarnings>
@@ -394,6 +396,7 @@
       <LinkTimeCodeGeneration>true</LinkTimeCodeGeneration>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (.NET)|Win32'">
     <PreBuildEvent>
@@ -403,12 +406,12 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>$(ProjectDir)source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MSCL_DISABLE_SSL;MSCL_DISABLE_WEBSOCKETS;WIN32;_DEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <DisableSpecificWarnings>4290;4127;4100;</DisableSpecificWarnings>
@@ -420,7 +423,6 @@
       <EnableCOMDATFolding>false</EnableCOMDATFolding>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OutputFile>..\Output\DotNet\x86\Debug\$(ProjectName).dll</OutputFile>
       <AdditionalDependencies>libsslMTd.lib;libcryptoMTd.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
@@ -435,11 +437,11 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>$(ProjectDir)source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MSCL_DISABLE_SSL;MSCL_DISABLE_WEBSOCKETS;WIN32;_DEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4290;4127;4100;</DisableSpecificWarnings>
@@ -449,7 +451,6 @@
     <Link>
       <OptimizeReferences>false</OptimizeReferences>
       <EnableCOMDATFolding>false</EnableCOMDATFolding>
-      <OutputFile>..\Output\DotNet\x64\Debug\$(ProjectName).dll</OutputFile>
       <AdditionalDependencies>libsslMTd.lib;libcryptoMTd.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
@@ -465,13 +466,13 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>$(ProjectDir)source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MSCL_DISABLE_SSL;MSCL_DISABLE_WEBSOCKETS;WIN32;_DEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <DisableSpecificWarnings>4290;4127;4100;</DisableSpecificWarnings>
@@ -489,6 +490,7 @@
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
     </Lib>
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (C++)|x64'">
     <PreBuildEvent>
@@ -499,12 +501,12 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>$(ProjectDir)source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MSCL_DISABLE_SSL;MSCL_DISABLE_WEBSOCKETS;WIN32;_DEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4290;4127;4100;</DisableSpecificWarnings>
@@ -521,6 +523,7 @@
     <Lib>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release (.NET)|Win32'">
     <PreBuildEvent>
@@ -531,12 +534,12 @@
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>$(ProjectDir)source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MSCL_DISABLE_SSL;MSCL_DISABLE_WEBSOCKETS;WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4290;4127;4100;</DisableSpecificWarnings>
@@ -544,7 +547,6 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <OutputFile>..\Output\DotNet\x86\Release\$(ProjectName).dll</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -566,12 +568,12 @@
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>$(ProjectDir)source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MSCL_DISABLE_SSL;MSCL_DISABLE_WEBSOCKETS;WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4290;4127;4100;</DisableSpecificWarnings>
@@ -579,7 +581,6 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <OutputFile>..\Output\Java\x86\$(ProjectName).dll</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -602,12 +603,12 @@
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>$(ProjectDir)source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MSCL_DISABLE_SSL;MSCL_DISABLE_WEBSOCKETS;WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4290;4127;4100;</DisableSpecificWarnings>
@@ -615,7 +616,6 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <OutputFile>..\Output\DotNet\x64\Release\$(ProjectName).dll</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -637,12 +637,12 @@
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>$(ProjectDir)source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MSCL_DISABLE_SSL;MSCL_DISABLE_WEBSOCKETS;WIN32;NDEBUG;_WINDOWS;_USRDLL;NOMINMAX;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>false</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4290;4127;4100;</DisableSpecificWarnings>
@@ -650,7 +650,6 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <OutputFile>..\Output\Java\x64\$(ProjectName).dll</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
